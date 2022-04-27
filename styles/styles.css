@@ -28,7 +28,7 @@ html
     width: 100%;
     display: grid;
     grid-template-columns: 60% 40%;
-    grid-template-rows: 100px 600px;
+    grid-template-rows: 100px 500px;
 }
 
 .cabecera-logo-nav
@@ -112,7 +112,7 @@ html
     margin-bottom: 20px;
 }
 
-.cabecera-introduccion__title span
+.orange
 {
     color: var(--orange_guitar);
 }
@@ -167,4 +167,79 @@ html
     background-position: center;
     background-size: contain;
     display: block;
+}
+
+.guitar-principal
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.principal_guitarrs
+{
+    width: 100%;
+    display: grid;
+    grid-template-rows: 60px 40px 220px 20px 220px;  
+    justify-content: center;  
+    margin-bottom: 30px;
+}
+
+.guitarrs-title
+{
+    font-size: 2.2rem;
+    font-weight: bold;
+    padding: 5px;
+    text-align: center;
+}
+
+.guitarrs_pestañas
+{
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+}
+
+.guitarrs-subTitle
+{
+    font-size: 1.4rem;
+}
+
+.guitarrs-viewAll
+{
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--gray-dark_guitar);
+
+}
+
+.guitarrs-grid
+{    
+    display: grid;
+    grid-template-columns: repeat(3, 300px);  
+    justify-items: center;
+    margin-bottom: 30px;
+}
+
+.guitar-img
+{
+    width: 230px;
+}
+
+.guitar_title
+{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--black_guitar);
+    margin-bottom: 8px;
+}
+
+.guitar_price
+{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--gray_guitar);
 }
