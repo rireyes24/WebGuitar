@@ -243,3 +243,64 @@ html
     font-weight: 500;
     color: var(--gray_guitar);
 }
+
+.principal_cards
+{
+    width: 80%;
+    height: 350px;
+    display: grid;
+    grid-template-rows: 90px 200px;
+    
+}
+
+.cards_guitarrs
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+.card_categories
+{
+    width: 180px;
+    height: 240px;    
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.card_acusticas
+{
+    background-image: url(/assets/images/acusticas.jpg);
+}
+
+.card_electricas
+{
+    background-image: url(/assets/images/electricas.jpg);
+}
+
+.card_bajos
+{
+    background-image: url(/assets/images/bajos.jpg);
+}
+
+.card_colecciones
+{
+    background-image: url(/assets/images/colecciones.jpg);
+}
+
+.guitar-type
+{   
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: var(--white);
+}
+
+.title-margin
+{
+    
+}
