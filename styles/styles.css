@@ -459,3 +459,62 @@ body
     font-size: 1.4rem;
     color: var(--gray-dark_guitar);
 }
+
+.principal_feedback
+{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.feedback_coments
+{
+    width: 85%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.feedback_photo
+{
+    width: 300px;
+    height: 300px;
+    background-image: url(/assets/images/photo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;    
+    display: block;
+}
+
+.feedback_customer
+{
+    width: 470px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.feedback_comentario
+{
+    width: 100%;
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: var(--gray-dark_guitar);
+}
+
+.feedback_name
+{
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.feedback_position
+{
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--gray-dark_guitar);
+}
