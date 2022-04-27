@@ -219,7 +219,7 @@ html
 .guitarrs-grid
 {    
     display: grid;
-    grid-template-columns: repeat(3, 300px);  
+    grid-template-columns: repeat(3, 380px);  
     justify-items: center;
     margin-bottom: 30px;
 }
