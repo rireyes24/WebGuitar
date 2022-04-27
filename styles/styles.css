@@ -20,7 +20,12 @@ html
 {
     font-size: 62.5%;
     font-family: 'Poppins', sans-serif;
-    
+
+}
+
+body
+{
+    width: 100%;
 }
 
 .guitar-cabecera
@@ -37,11 +42,11 @@ html
     display: flex;
     justify-content: space-around;
     align-items: center;
- 
+
 }
 
 .cabecera-logo-nav__logo
-{  
+{
     width: 130px;
     height: 50px;
     background-image: url(/assets/icons/logo.svg);
@@ -73,22 +78,22 @@ html
 {
     position: relative;
     width: 100%;
-    display: flex;        
-    justify-content: right;     
+    display: flex;
+    justify-content: right;
     grid-column: 2 / 3;
     grid-row: 1 / 3;
 }
 
 .cabecera-image__img
-{ 
+{
     width: 100%;
-    height: 100%;     
+    height: 100%;
     max-width: 600px;
     background-image: url(/assets/images/poster.png);
     background-repeat: no-repeat;
     background-position: start;
     background-size: contain;
-    
+
 }
 
 .cabecera-introduccion
@@ -101,7 +106,7 @@ html
 
 .cabecera-introduccion-div
 {
-    width: 80%;    
+    width: 80%;
 }
 
 .cabecera-introduccion__title
@@ -142,7 +147,7 @@ html
     height: 50px;
     background-color: var(--orange_guitar);
     text-decoration: none;
-    font-size: 1.2rem;    
+    font-size: 1.2rem;
     color: var(--white);
     border-radius: 30px;
 }
@@ -150,7 +155,7 @@ html
 .introduccion-btns__get-play
 {
     width: 30px;
-    height: 30px;         
+    height: 30px;
     background-image: url(/assets/icons/apple-google/playstore.svg);
     background-repeat: no-repeat;
     background-position: center;
@@ -161,7 +166,7 @@ html
 .introduccion-btns__get-apple
 {
     width: 30px;
-    height: 30px;         
+    height: 30px;
     background-image: url(/assets/icons/apple-google/Apple-logo.svg);
     background-repeat: no-repeat;
     background-position: center;
@@ -180,58 +185,59 @@ html
 
 .principal_guitarrs
 {
-    width: 100%;
-    display: grid;
-    grid-template-rows: 60px 40px 220px 20px 220px;  
-    justify-content: center;  
+    width: 85%;   
+    justify-content: center;
     margin-bottom: 30px;
+    margin-bottom: 130px;
 }
 
 .guitarrs-title
 {
-    font-size: 2.2rem;
+    width: 100%;
+    height: 80px;
+    font-size: 3rem;
     font-weight: bold;
     padding: 5px;
     text-align: center;
+    margin-bottom: 60px;
 }
 
-.guitarrs_pestañas
-{
-    display: flex;
-    justify-content: space-between;
-    align-self: center;
-}
 
 .guitarrs-subTitle
 {
-    font-size: 1.4rem;
+    grid-column: 1 / 2;
+    justify-self: self-start;
+    font-size: 1.8rem;
+    margin-bottom: 40px;
 }
 
 .guitarrs-viewAll
 {
-    font-size: 1.2rem;
+    grid-column: 3 / 4;
+    justify-self: self-end;
+    margin-bottom: 40px;
+    font-size: 1.6rem;
     font-weight: 500;
     text-decoration: none;
     color: var(--gray-dark_guitar);
-
 }
 
 .guitarrs-grid
-{    
+{
     display: grid;
-    grid-template-columns: repeat(3, 380px);  
+    grid-template-columns: repeat(3, 33.333%);
     justify-items: center;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
 }
 
 .guitar-img
 {
-    width: 230px;
+    width: 260px;
 }
 
 .guitar_title
 {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     font-weight: bold;
     color: var(--black_guitar);
     margin-bottom: 8px;
@@ -246,11 +252,12 @@ html
 
 .principal_cards
 {
-    width: 80%;
-    height: 350px;
+    width: 85%;
+    height: 400px;
     display: grid;
-    grid-template-rows: 90px 200px;
-    
+    grid-template-rows: 120px 300px;
+    align-items: center;
+    margin-bottom: 130px;
 }
 
 .cards_guitarrs
@@ -262,7 +269,7 @@ html
 .card_categories
 {
     width: 180px;
-    height: 240px;    
+    height: 240px;
     display: flex;
     align-items: flex-end;
     justify-content: center;
@@ -294,13 +301,76 @@ html
 }
 
 .guitar-type
-{   
+{
     font-size: 1.4rem;
     font-weight: 300;
     color: var(--white);
 }
 
-.title-margin
+.principal_brands
 {
-    
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 130px;
+}
+
+.brands_guitarrs
+{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(2, 130px);    
+}
+
+.brands
+{
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    justify-self: center;
+
+}
+
+.brandG1
+{
+    background-image: url(/assets/icons/business-guitars/fender.svg);
+}
+
+.brandG2
+{
+    background-image: url(/assets/icons/business-guitars/gibson.svg);
+}
+
+.brandG3
+{
+    background-image: url(/assets/icons/business-guitars/ibanez.svg);
+}
+
+.brandG4
+{
+    background-image: url(/assets/icons/business-guitars/taylor.svg);
+}
+
+.brandG5
+{
+    background-image: url(/assets/icons/business-guitars/gretsch.svg);
+}
+
+.brandG6
+{
+    background-image: url(/assets/icons/business-guitars/takamine.svg);
+}
+
+.brandG7
+{
+    background-image: url(/assets/icons/business-guitars/martin&co.svg);
+}
+
+.brandG8
+{
+    background-image: url(/assets/icons/business-guitars/seagull.svg);
 }
