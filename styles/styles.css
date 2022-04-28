@@ -518,3 +518,66 @@ body
     font-weight: 500;
     color: var(--gray-dark_guitar);
 }
+
+.principal_available
+{
+    width: 100%;
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    justify-content: center;
+    align-items: center;
+
+}
+
+.available_android-ios
+{    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.available_title
+{
+    font-size: 3.8rem;
+    text-align: center;
+}
+
+.available_btns
+{
+    width: 80%;
+    display: flex;    
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.available_android
+{
+    width: 190px;
+    height: 100px;
+    background-image: url(/assets/icons/apple-google/Mobile-google-store.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;    
+    display: block;
+}
+
+.available_ios
+{
+    width: 190px;
+    height: 65px;
+    background-image: url(/assets/icons/apple-google/Mobile-app-store.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;    
+    display: block;
+}
+
+.available_image
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
