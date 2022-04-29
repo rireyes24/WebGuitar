@@ -22,7 +22,7 @@
     <!-- Styles -->
 
         <link rel="stylesheet" href="/styles/styles.css">
-        Hola
+       
 
     <!-- Icon -->
 
@@ -32,65 +32,64 @@
 <body>
     <header class="guitar-cabecera">
         <section class="cabecera-logo-nav">
-            <span class="cabecera-logo-nav__logo"></span>
-            <ul class="cabecera-logo-nav__nav">
-                <li class="cabecera-logo-nav__item"><a href="">Tienda</a></li>
-                <li class="cabecera-logo-nav__item"><a href="">Colecciones</a></li>
-                <li class="cabecera-logo-nav__item"><a href="">Soporte</a></li>
-            </ul>
+            <span class="cabecera-logo-nav__logo"></span>           
         </section>
         <section class="cabecera-image">
             <span class="cabecera-image__img"></span>                      
         </section>
         <section class="cabecera-introduccion">
-            <div class="cabecera-introduccion-div">
-                <h1 class="cabecera-introduccion__title">Busque <span class="orange">Guitarras</span> de la mejor calidad en línea</h1>
-                <p class="cabecera-introduccion__parrafo">Explore más de 50k de las últimas colecciones de guitarras de marca en línea con Rhythm.</p>
-                <div class="cabecera-introduccion-btns">
-                    <a class="introduccion-btns__get-app" href="">Obtener la aplicación</a>
-                    <a class="introduccion-btns__get-play" href=""></a>
-                    <a class="introduccion-btns__get-apple" href=""></a>
-                </div>
-            </div>            
-        </section>       
+            <h1 class="cabecera-introduccion__title">Busque <span class="orange">Guitarras</span> de la mejor calidad en línea</h1>
+            <div class="introduccion__parrafo">
+                <p class="cabecera-introduccion__parrafo">Explore más de 50k de las últimas colecciones de guitarras de marca en línea con Rhythm.</p>             
+            </div>
+        </section>  
+        <section class="section-btns">
+            <div class="cabecera-introduccion-btns">
+                <p class="btns-obtenerApp">Obten la aplicación en: </p>
+                <a class="introduccion-btns__get-play" href=""></a>
+                <a class="introduccion-btns__get-apple" href=""></a>
+            </div>  
+        </section>     
     </header>
+
+    <div class="guitar-fraccion"></div>
 
     <main class="guitar-principal">
         <section class="principal_guitarrs">
             <h2 class="guitarrs-title">Echa un vistazo a la <span class="orange">Tienda</span></h2>            
             <div class="guitarrs-grid">
-                <h3 class="guitarrs-subTitle">NUEVO EN EL TABLERO</h3>
+                <h3 class="guitarrs-subTitle">NUEVAS EN EL TABLERO</h3>
                 <a class="guitarrs-viewAll" href="">ver todo</a>
-                <div>
+                <div class="guitar-description">
                     <img class="guitar-img" src="/assets/images/guitars/The-Essential-Les-Paul.jpg" alt="">
                     <h4 class="guitar_title">The Essential Les Paul</h4>
                     <p class="guitar_price"> $1,299.00</p>
                 </div>
-                <div>
+                <div class="guitar-description">
                     <img class="guitar-img" src="/assets/images/guitars/J-45-Standard.jpg" alt="">
                     <h4 class="guitar_title">J-45 Standard</h4>
                     <p class="guitar_price">$1,699.00</p>
                 </div>
-                <div>
+                <div class="guitar-description">
                     <img class="guitar-img" src="/assets/images/guitars/Hummingbird-Standard.jpg" alt="">
                     <h4 class="guitar_title">Hummingbird Standard</h4>
                     <p class="guitar_price">$2,099.00</p>
                 </div>              
             </div>           
             <div class="guitarrs-grid">    
-                <h3 class="guitarrs-subTitle">MÁS VENDIDOS</h3>
+                <h3 class="guitarrs-subTitle">MÁS VENDIDAS</h3>
                 <a class="guitarrs-viewAll" href="">ver todo</a>            
-                <div>
+                <div class="guitar-description">
                     <img class="guitar-img" src="/assets/images/guitars/Active-Precision Bass®-PH-V.jpg" alt="">
                     <h4 class="guitar_title">Active Precision Bass® PH V</h4>
                     <p class="guitar_price">$4,199.00</p>
                 </div>
-                <div>
+                <div class="guitar-description">
                     <img class="guitar-img" src="/assets/images/guitars/Redondo-Special.jpg" alt="">
                     <h4 class="guitar_title">Redondo Special</h4>
                     <p class="guitar_price">$2,800.00</p>
                 </div>
-                <div>
+                <div class="guitar-description">
                     <img class="guitar-img" src="/assets/images/guitars/Professional-II-Stratocaster®.jpg" alt="">
                     <h4 class="guitar_title">Professional II Stratocaster®</h4>
                     <p class="guitar_price">$3,199.00</p>
@@ -98,46 +97,42 @@
             </div>
         </section>
         <section class="principal_cards">
-            <h2 class="guitarrs-title title-margin">Elija en función de las <span class="orange">categorías</span></h2>
-            <div class="cards_guitarrs">
-                <div class="card_categories card_acusticas"><span class="guitar-type">Acusticas</span></div>
-                <div class="card_categories card_electricas"><span class="guitar-type">Electricas</span></div>
-                <div class="card_categories card_bajos"><span class="guitar-type">Bajos</span></div>
-                <div class="card_categories card_colecciones"><span class="guitar-type">Colecciones</span></div>
-            </div>            
+            <h2 class="guitarrs-title">Elija en función de las <span class="orange">categorías</span></h2>
+            <div class="card_categories card_acusticas"><span class="guitar-type">Acusticas</span></div>
+            <div class="card_categories card_electricas"><span class="guitar-type">Electricas</span></div>
+            <div class="card_categories card_bajos"><span class="guitar-type">Bajos</span></div>
+            <div class="card_categories card_colecciones"><span class="guitar-type">Colecciones</span></div>
         </section>
         <section class="principal_brands">
-            <h2 class="guitarrs-title">Presentando las <span class="orange">Mejores Marcas</span></h2>
-            <div class="brands_guitarrs">
-                <span class="brands brandG1"></span>
-                <span class="brands brandG2"></span>
-                <span class="brands brandG3"></span>
-                <span class="brands brandG4"></span>
-                <span class="brands brandG5"></span>
-                <span class="brands brandG6"></span>
-                <span class="brands brandG7"></span>
-                <span class="brands brandG8"></span>
-            </div>
+            <h2 class="guitarrs-title guitar_grid-column">Presentando las <span class="orange">Mejores Marcas</span></h2>
+            <span class="brands brandG1"></span>
+            <span class="brands brandG2"></span>
+            <span class="brands brandG3"></span>
+            <span class="brands brandG4"></span>
+            <span class="brands brandG5"></span>
+            <span class="brands brandG6"></span>
+            <span class="brands brandG7"></span>
+            <span class="brands brandG8"></span>            
         </section>
         <section class="principal_why">
             <h2 class="guitarrs-title why_title">¿Por qué probar <span class="orange">Rhythm?</span></h2>
-            <div class="why_probar">
-                <div class="why_options">
-                    <div class="why-iconItem"><span class="why_icon why_menu"></span></div>
-                    <h4 class="why-title">NAVEGACIÓN FLUIDA</h4>
-                    <p class="why-parrafo">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-                <div class="why_options">
-                    <div class="why-iconItem"><span  class="why_icon why_truck"></span></div>
-                    <h4 class="why-title">ENTREGA FÁCIL</h4>
-                    <p class="why-parrafo">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-                <div class="why_options">
-                    <div class="why-iconItem"><span class="why_icon why_wall"></span></div>
-                    <h4 class="why-title">PAGOS RÁPIDOS</h4>
-                    <p class="why-parrafo">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
+            <div class="why_options">
+                <div class="why-iconItem"><span class="why_icon why_menu"></span></div>
+                <h4 class="why-title">NAVEGACIÓN FLUIDA</h4>
+                <!-- <p class="why-parrafo">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> -->
             </div>
+            <div class="why_options why_options-row">
+                <div class="why-iconItem"><span  class="why_icon why_truck"></span></div>
+                <h4 class="why-title">ENTREGA FÁCIL</h4>
+                <!-- <p class="why-parrafo">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> -->
+            </div>
+            <div class="why_options why_options-rowPay">
+                <div class="why-iconItem"><span class="why_icon why_wall"></span></div>
+                <h4 class="why-title">PAGOS RÁPIDOS</h4>
+                <!-- <p class="why-parrafo">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> -->
+            </div>
+                
+            
         </section>
         <section class="principal_feedback">
             <h2 class="guitarrs-title">Lo que dicen nuestros <span class="orange">clientes</span></h2>
