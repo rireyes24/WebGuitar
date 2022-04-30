@@ -82,19 +82,19 @@ body
     position: relative;
     width: 100%;
     display: flex;
-    justify-content: right;
+    justify-content: flex-end;    
     grid-column: 2 / 3;
-    grid-row: 1 / 3;
+    grid-row: 1 / 2;
 }
 
 .cabecera-image__img
 {
-    width: 100%;    
+    width: 100%;
     background-image: url(/assets/images/poster.png);
     background-repeat: no-repeat;
     background-position: start;
     background-size: contain;
-
+    justify-self: flex-end;
 }
 
 .cabecera-introduccion
@@ -170,6 +170,22 @@ body
     font-size: 1.4rem;
 }
 
+.get-play-apple
+{
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+
+.get-play-apple:hover
+{
+    background-color: var(--gray_guitar);
+    border-radius: 10px;
+}
+
 .introduccion-btns__get-play
 {
     width: 30px;
@@ -177,8 +193,9 @@ body
     background-image: url(/assets/icons/apple-google/playstore.svg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     display: block;
+    
 }
 
 .introduccion-btns__get-apple
@@ -253,6 +270,13 @@ body
 .guitar-description
 {
     grid-column: 1 / 3;
+    padding: 4px;
+}
+
+.guitar-description:hover
+{
+    border: 3px solid var(--gray_guitar);
+    border-radius: 18px;
 }
 
 .guitar-img
@@ -262,10 +286,12 @@ body
 
 .guitar_title
 {
+    width: 90%;
     font-size: 1.4rem;
     font-weight: bold;
     color: var(--black_guitar);
     margin-bottom: 8px;
+    
 }
 
 .guitar_price
@@ -280,17 +306,21 @@ body
 
 .principal_cards
 {
-    width: 85%;    
+    width: 100%;    
     display: grid;
-    grid-template-rows: 100px repeat(4, 260px);
+    grid-template-rows: 100px  350px;
     justify-items: center;    
     align-items: center;
 }
 
 .card_categories
 {
-    width: 180px;
-    height: 240px;
+    
+    width: 100%;
+    min-width: 220px;
+    max-width: 300px;
+    height: 280px;
+    scroll-snap-align: center;
     display: flex;
     align-items: flex-end;
     justify-content: center;
@@ -299,11 +329,15 @@ body
     background-size: cover;
     border-radius: 20px;
     padding: 20px;    
+
+    margin-left: 13%;
+    margin-right: 13%;
 }
 
 .card_acusticas
 {
     background-image: url(/assets/images/acusticas.jpg);
+    margin-left: 20%;
 }
 
 .card_electricas
@@ -319,6 +353,7 @@ body
 .card_colecciones
 {
     background-image: url(/assets/images/colecciones.jpg);
+    margin-right: 20%;
 }
 
 
@@ -800,3 +835,15 @@ body
     background-color: var(--orange_guitar);
 }
 
+.cards-pd
+{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+
+}
