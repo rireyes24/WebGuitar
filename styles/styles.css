@@ -814,7 +814,7 @@ body
 
 .f-github
 {
-    background-image: url(assets/icons/github.png);
+    background-image: url(../assets/icons/github.png);
     width: 30px;
     height: 30px; 
 }
