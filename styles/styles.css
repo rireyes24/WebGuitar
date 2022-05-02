@@ -31,10 +31,12 @@ body
 
 .guitar-cabecera
 {
+    position: relative;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 50%);    
-    grid-template-rows: 180px 300px 100px;
+    grid-template-rows: 200px 300px 100px;
+    
 }
 
 .cabecera-logo-nav
@@ -42,8 +44,8 @@ body
     width: 100%;
     display: flex;
     justify-content: space-around;
-    align-items: flex-start;
-    margin-top: 30px;
+    align-items: flex-start;   
+    padding: 30px;
 
 }
 
@@ -58,43 +60,12 @@ body
     display: block;
 }
 
-.cabecera-logo-nav__nav
-{
-    width: 340px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.cabecera-logo-nav__item
-{
-    font-size: 1.4rem;
-    list-style: none;
-}
-
-.cabecera-logo-nav__item a
-{
-    text-decoration: none;
-    color: var(--black_guitar);
-}
-
-.cabecera-image
-{
-    position: relative;
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;    
-    grid-column: 2 / 3;
-    grid-row: 1 / 2;
-}
 
 .cabecera-image__img
-{
-    width: 100%;
-    background-image: url(../assets/images/poster.png);
-    background-repeat: no-repeat;
-    background-position: start;
-    background-size: contain;
-    justify-self: flex-end;
+{    
+    width: 160px;  
+    height: 151px;  
+    justify-self: flex-start;    
 }
 
 .cabecera-introduccion
@@ -106,10 +77,8 @@ body
     grid-row: 2 / 3;
     flex-direction: column;      
     align-items: center;
-    justify-items: center;
-   
+    justify-items: center;   
 }
-
 
 .cabecera-introduccion__title
 {
@@ -443,7 +412,7 @@ body
     
     display: grid;
     grid-template-columns: repeat(3, 33.33%);
-    grid-template-rows: 80px repeat(2, 110px);
+    grid-template-rows: 80px repeat(2, 120px);
     justify-items: center;
     align-items: center;
     background-color: var(--black_guitar);
@@ -648,7 +617,7 @@ body
 .available_android
 {
     width: 140px;
-    height: 100px;
+    height: 65px;
     background-image: url(../assets/icons/apple-google/Mobile-google-store.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -658,7 +627,7 @@ body
 
 .available_ios
 {
-    width: 120px;
+    width: 140px;
     height: 65px;
     background-image: url(../assets/icons/apple-google/Mobile-app-store.png);
     background-repeat: no-repeat;
@@ -847,4 +816,20 @@ body
     overscroll-behavior-x: contain;
     scroll-snap-type: x proximity;
 
+}
+
+@media (min-width: 425px)
+{
+    .guitar-cabecera
+    {          
+        grid-template-rows: 250px 300px 100px;    
+    }
+}
+
+@media (min-width: 530px)
+{
+    .guitar-cabecera
+    {          
+        grid-template-rows: 300px 300px 100px;    
+    }
 }
